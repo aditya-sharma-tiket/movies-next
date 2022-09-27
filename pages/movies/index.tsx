@@ -30,7 +30,7 @@ const key:string | undefined=process.env.NEXT_PUBLIC_API_KEY;
 const TrendingMovies=({trendingmovies}:InferGetStaticPropsType<typeof getStaticProps>)=>{
     return(
         <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
-        {trendingmovies.results.map((movie:MovieInterface)=>{
+        {trendingmovies.results && trendingmovies.results.map((movie:MovieInterface)=>{
             return (
             <div className={style.movieContainer} key={movie.id}>
                 <img id="moviePoster" style={{height:"400px"}}

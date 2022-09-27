@@ -6,7 +6,7 @@ const MoviesCollection=(props:{movies:MovieInterface[]| null,value:string})=>{
         <>
         <h2 className={style.heading}>{props.value}</h2>
         <div className={style.movieContainer}>
-            {props.movies?.map((movie:MovieInterface)=>{
+            {props.movies && props.movies?.map((movie:MovieInterface)=>{
                 return <MovieDetails key={movie.id} movies={movie}/>
             })}
         </div>

@@ -8,3 +8,8 @@
 .heading{
     padding-left: 2rem;
 }
+
+.emptyContainer{
+    margin-bottom: 1rem;
+    min-height: 100px;
+}

@@ -6,6 +6,7 @@ import ShowsCollection from '../components/Collections/ShowCollections';
 import GenreComp from '../components/Genre';
 import UpcomingMovies from '../components/UpcomingMovies/Upcoming';
 import GenreBar from '../components/GenreBar/GenreBar';
+import styles from '../styles/Home.module.css'
 
 export interface MovieInterface{
   adult: boolean,
@@ -66,7 +67,7 @@ const Home: NextPage = ({trendingmovies,trendingshows}:InferGetServerSidePropsTy
       <GenreComp url={`https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=28`}  title='Actions Movies'/>
       <GenreComp url={`https://api.themoviedb.org/3/discover/movie?api_key=${key}&with_genres=27`}  title='Horror Movies'/>
       
-      <div style={{marginBottom:'1rem',minHeight:'100px'}}></div>
+      <div className={styles.emptyContainer}></div>
     </>
   )
 }
