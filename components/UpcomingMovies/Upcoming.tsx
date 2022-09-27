@@ -25,12 +25,10 @@ const UpcomingMovies=(props:{url:string})=>{
                     <div className={styles.movieDetailContainer} key={movie.id}>
                         <Link as={`/movies/${movie.id}`} href={`/movies/[id]`}>
                             <a>
-                                <Image 
+                                <img 
                                 src={"https://image.tmdb.org/t/p/w500"+movie.poster_path}
-                                width='300px'
-                                height='350px'
                                 alt="poster"
-                                style={{borderRadius:'10px',cursor:'pointer'}}
+                                style={{ width:'300px',height:'350px',borderRadius:'10px',cursor:'pointer'}}
                                 />
                             </a>
                         </Link>
