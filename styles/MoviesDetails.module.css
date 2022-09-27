@@ -1,0 +1,25 @@
+.mainContainer{
+    padding: 1rem;
+    padding-bottom: 0;
+    margin: 1rem;
+    background-color:black;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.imgContainer{
+    position: relative;
+}
+.movieName{
+    width: 200px;
+    word-wrap: normal;
+}
+
+.mainContainer:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    margin: .5rem;
+}
+
+.container{
+    padding: 1rem;
+}

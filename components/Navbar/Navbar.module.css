@@ -1,0 +1,24 @@
+.navbarContainer{
+    background-color: rgb(9, 26, 43);
+    padding: 1rem;
+    color: white;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.navbarTitle{
+    font-weight: bold;
+    font-size: 2em;
+    position: relative;
+    font-weight: 400;
+}
+
+.navbarList{
+    list-style: none;
+    padding-inline-start: 0;
+    text-align: right;
+}
+
+.navbarListItems{
+    display: inline;
+    padding: 0 1rem;
+}

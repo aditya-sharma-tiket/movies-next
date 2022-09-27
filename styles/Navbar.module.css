@@ -1,0 +1,23 @@
+.genreContainer{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.genreOption{
+    display: none;
+}
+
+.genreContainer:hover  .genreOption{
+    display: block;
+    position: absolute;
+    background-color: #51557E;
+    z-index: 3;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.genreOption option{
+    font-weight: bold;
+    padding: 10px;
+}

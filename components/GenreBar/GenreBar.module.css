@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    padding: 1rem;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.023);
+    border-radius: 16px;
+    /* backdrop-filter: blur(1px); */
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.sub{
+    padding: 2rem;
+    margin: 1rem;
+    min-width: 180px;
+    flex-shrink: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}
