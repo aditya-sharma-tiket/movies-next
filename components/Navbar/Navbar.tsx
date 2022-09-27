@@ -35,6 +35,7 @@ const Navbar=()=>{
         <div className={style.navbarContainer}>
             <div className={style.navbarTitle}><Link href='/'>Website Title</Link></div>
             <ul className={style.navbarList}>
+            <li className={style.navbarListItems}><Link href='/'>Home</Link></li>
                 <li className={style.navbarListItems}><Link href='/movies'>Movies</Link></li>
                 <li className={style.navbarListItems}>Shows</li>
                 <li className={style.navbarListItems}><Link href='/profile'>Profile</Link></li>
