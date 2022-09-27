@@ -32,7 +32,7 @@ const TrendingMovies=({trendingmovies}:InferGetStaticPropsType<typeof getStaticP
         <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
         {trendingmovies.results.map((movie:MovieInterface)=>{
             return (
-            <div className={style.movieContainer}>
+            <div className={style.movieContainer} key={movie.id}>
                 <img id="moviePoster" style={{height:"400px"}}
                     src={"https://image.tmdb.org/t/p/w500"+movie.poster_path}
                     alt="Movie Poster"/>

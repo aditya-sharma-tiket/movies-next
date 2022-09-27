@@ -28,6 +28,7 @@ const UpcomingMovies=(props:{url:string})=>{
                             src={"https://image.tmdb.org/t/p/w500"+movie.poster_path}
                             width='300px'
                             height='350px'
+                            alt="poster"
                             style={{borderRadius:'10px',cursor:'pointer'}}
                             />
                         </Link>
