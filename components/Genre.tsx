@@ -12,6 +12,7 @@ type ApiResponse={
 const GenreComp=(props:{url:string,title:string})=>{
     const[movieList,setMovieList]=useState<ApiResponse>({page:0,results:[],total_pages:"",total_results:""});
 
+    
     useEffect(()=>{
         const getMovies= async()=>{
             const res=await fetch(props.url);

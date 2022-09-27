@@ -84,6 +84,7 @@ const genres:GenreType[]=[
 ]
 const GenreBar=()=>{
     const[genreList,setGenreList]=useState<GenreType[] | null>(null)
+    
     useEffect(()=>{setGenreList(genres)},[])
     return(
         <div className={styles.main}>

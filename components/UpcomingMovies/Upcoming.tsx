@@ -6,6 +6,7 @@ import Link from "next/link";
 const UpcomingMovies=(props:{url:string})=>{
     const[movieList,setMovieList]=useState<MovieInterface[] | null>(null);
 
+    
     useEffect(()=>{
         const getList=async()=>{
             const res=await fetch(props.url);
