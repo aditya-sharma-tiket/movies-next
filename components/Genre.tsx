@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MovieInterface } from "../pages";
-import MoviesCollection from "./MoviesCollection";
+import MoviesCollection from "./Collections/MoviesCollection";
 
 type ApiResponse={
     page:number,

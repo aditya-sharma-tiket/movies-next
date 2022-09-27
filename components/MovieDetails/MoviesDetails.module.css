@@ -38,7 +38,9 @@
 .movieContainer img{
     width: 100%;
 }
-
+.movieContainer img:hover{
+    cursor: pointer;
+}
 .movieInfoContainer{
     color: #eee;
     display: flex;

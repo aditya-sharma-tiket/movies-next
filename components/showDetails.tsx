@@ -7,7 +7,7 @@ const ShowDetails=(props:{movies:ShowInterface})=>{
         <div className={style.mainContainer}>
                 <Image 
                 src={"https://image.tmdb.org/t/p/w500"+props.movies.poster_path}
-                alt="Picture of the author"
+                alt="Picture of the show"
                 width={200}
                 height={250}
                 />

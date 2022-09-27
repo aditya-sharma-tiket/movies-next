@@ -17,9 +17,11 @@ const MovieDetails=(props:{movies:MovieInterface})=>{
         //         <p className={style.movieName}>{props.movies.title}</p>
         // </div>
         <div className={style.movieContainer}>
+            <Link as={`/movies/${props.movies.id}`}  href={`/movies/[id]`}>
                 <img id="moviePoster" style={{height:"400px"}}
                     src={"https://image.tmdb.org/t/p/w500"+props.movies.poster_path}
                     alt="Movie Poster"/>
+            </Link>
                 <div className={style.movieInfoContainer}>
                     <h3 className={style.movieTitle}>{props.movies.title}</h3>
                     <span className="green">{props.movies.vote_average}</span>

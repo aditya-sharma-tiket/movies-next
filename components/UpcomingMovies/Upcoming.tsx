@@ -20,17 +20,19 @@ const UpcomingMovies=(props:{url:string})=>{
         <div className={styles.mainContainer}>
             <p>Upcoming Movies</p>
             <div className={styles.movieContiner}>
-                {movieList?.map((movie)=>{
+                {movieList && movieList.map((movie)=>{
                     return (
                     <div className={styles.movieDetailContainer} key={movie.id}>
                         <Link as={`/movies/${movie.id}`} href={`/movies/[id]`}>
-                            <Image 
-                            src={"https://image.tmdb.org/t/p/w500"+movie.poster_path}
-                            width='300px'
-                            height='350px'
-                            alt="poster"
-                            style={{borderRadius:'10px',cursor:'pointer'}}
-                            />
+                            <a>
+                                <Image 
+                                src={"https://image.tmdb.org/t/p/w500"+movie.poster_path}
+                                width='300px'
+                                height='350px'
+                                alt="poster"
+                                style={{borderRadius:'10px',cursor:'pointer'}}
+                                />
+                            </a>
                         </Link>
                     </div>
                     

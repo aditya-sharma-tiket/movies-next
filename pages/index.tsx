@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { GetServerSideProps,InferGetServerSidePropsType } from 'next';
-import MoviesCollection from '../components/MoviesCollection';
-import ShowsCollection from '../components/ShowCollections';
+import MoviesCollection from '../components/Collections/MoviesCollection';
+import ShowsCollection from '../components/Collections/ShowCollections';
 import GenreComp from '../components/Genre';
 import UpcomingMovies from '../components/UpcomingMovies/Upcoming';
 import GenreBar from '../components/GenreBar/GenreBar';
