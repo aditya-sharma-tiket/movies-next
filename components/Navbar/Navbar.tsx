@@ -37,22 +37,8 @@ const Navbar=()=>{
             <ul className={style.navbarList}>
             <li className={style.navbarListItems}><Link href='/'>Home</Link></li>
                 <li className={style.navbarListItems}><Link href='/movies'>Movies</Link></li>
-                <li className={style.navbarListItems}>Shows</li>
                 <li className={style.navbarListItems}><Link href='/profile'>Profile</Link></li>
             </ul>
-            {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-                <div>
-                   <p>Genre</p>
-                    <div>
-                    {genres.map((genre)=>{
-                        return <option key={genre.id}>{genre.name}</option>
-                    })}
-                    </div>
-                    
-                </div>
-                <Link href='/profile'><p style={{marginLeft:'3rem'}}>Profile</p></Link>
-                <input type='search' placeholder="Search...." style={{color:'white',fontWeight:'bold',fontSize:'18px',height:'40px',backgroundColor:'#51557E',borderRadius:'10px',border:'2px solid #51557E'}}/>
-            </div> */}
         </div>
     )
 }
